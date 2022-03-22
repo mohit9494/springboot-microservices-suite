@@ -1,4 +1,4 @@
-package com.in28minutes.microservices.apigateway;
+package com.mms.microservices.apigateway;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
