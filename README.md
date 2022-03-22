@@ -23,4 +23,7 @@ This repo shows how to implement microservices components using Spring Boot
     - Closed: when everything is normal. Initially, the circuit breaker is in a Closed state.
     - Open: when a failure occurs above predetermined criteria. In this state, requests to other microservices will not be executed and fail-fast or fallback will be performed if available. When this state has passed a certain time limit, it will automatically or according to certain criteria will be returned to the Half-Open state.
     - Half-Open: several requests will be executed to find out whether the microservices that we are calling are working normally. If successful, the state will be returned to the Closed state. However, if it still fails it will be returned to the Open state.
+  - Resilience4j library can be used to implement Circuit breaker mechanism
+ - Rate Limiting - This is a strategy used while creating microservices to control the number of calls that any consumer can make during a particular time window.
+ 
 
