@@ -13,4 +13,6 @@ This repo shows how to implement microservices components using Spring Boot
 - Eureka Server - This is a discovery server where microservices can register themselves so others can discover them. Usage is Feign Client is very convenient because of Eureka server as you just provide the name of service to connect in Feign Client. 
 - Eureka Client - Mostly it is a microservice that registers itself to the Eureka server
 - Eureka Instance - a single instance of a microservice (you can add more instances of the same microservice as your load grows i.e. horizontal scaling).
+- Load Balancing - With new updates in Spring Cloud, Load balancing can be achieved with a combination of Feign Client and Eureka Server interaction. This is also called as Client kside load balancing.
+- Spring Cloud API Gateway - This is a new API in Spring Cloud which provides out-of-the-box routing mechanisms often used in microservices applications as a way of hiding multiple services behind a single facade.
 
